@@ -33,8 +33,7 @@ const router = new Router({
   mode: 'hash'
 })
 
-router.afterEach((to, from) => {
-  window.console.log(from)
+router.afterEach((to) => {
   document.title = to.meta.title
 })
 
