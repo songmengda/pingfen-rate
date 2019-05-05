@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover" />
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <title>评分组件-星星</title>
+  <script>
+    ; (function () {
+      // rem换算zx
+      var resizeEvt = "orientationchange" in window ? "orientationchange" : "resize"
+      var docEl = document.documentElement
+      function resizeFn() {
+        var docW = docEl.clientWidth
+        if (docW > 750) {
+          docW = 750
+        }
+        docEl.style.fontSize = (docW * 100) / 750 + "px"
+      }
+      resizeFn()
+      window.addEventListener(resizeEvt, resizeFn)
+    })();
+  </script>
+
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>

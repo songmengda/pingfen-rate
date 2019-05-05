@@ -1,4 +1,4 @@
-# yudi-canvas
+# pingfen-rate
 
 ## Project setup
 ```

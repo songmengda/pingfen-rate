@@ -2,27 +2,26 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 
-const rain01 = r => require.ensure([], () => r(require('./pages/rain01')), 'rain01')
-
-
+const rate = r => require.ensure([], () => r(require('./pages/rate')), 'rate')
 
 Vue.use(Router)
 
 const routes = [
+
   {
-    path: '/rain01',
-    name: 'rain01',
-    component: rain01,
+    path: '/rate',
+    name: 'rate',
+    component: rate,
     meta: {
-      title: '雨滴01'
+      title: '星星评分'
     }
   },
   {
     path: '*',
-    redirect: '/rain01',
-    component: rain01,
+    redirect: '/rate',
+    component: rate,
     meta: {
-      title: '雨滴'
+      title: '星星评分'
     }
   }
 
