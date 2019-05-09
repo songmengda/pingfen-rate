@@ -1,9 +1,10 @@
+
 <template>
-  <div class="my-rate">
+  <div class="smd-rate">
     <i
       class="iconfont icon-xingxingshixin"
       v-for="(item,index) in 5"
-      :key="index"
+      :key="index+item"
       @click="disabled?'':choice(index)"
       :class="isChoice(index)"
     >
@@ -67,15 +68,6 @@ export default {
 <style lang="less"  rel="stylesheet/less" scope type="text/less">
 @import url('./iconfont.css');
 @r: 100;
-* {
-  padding: 0;
-  margin: 0;
-}
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
 .icon-xingxingshixin {
   font-size: 62rem / @r;
   position: relative;
@@ -83,7 +75,6 @@ body {
 .icon-star {
   color: #ef4034;
 }
-
 .icon-star-o {
   color: #ccc;
 }
