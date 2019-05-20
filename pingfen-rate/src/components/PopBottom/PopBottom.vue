@@ -66,8 +66,6 @@ export default {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      margin-top: -9rem / @r;
-      margin-left: -9rem / @r;
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA3BJREFUWAm9mMlu00AYxxO3TS9wQkiQNnShpXDgwBM0JvAUvafp9jTdktz7FAhinqAHhIq6t3QTi+BadeP/C+MotbPYTuKRJp7lW36emW9mnOTCwsKLq6urYiKRmCmXy+d6xp7y+fxTOd0YGBgoWNfX1yVV7GQyWZmfn38SNw0+8Q0DLJaoZlTZvru7m7q5uXHihMIXPvENAyxJRmRxcTGtaaNjUtVv/f399tra2gV9vUpemFQqZa+srJxVgXAaJxQwmh6m6aWma0cjkwUGjhoQlTigWsH4gHoN1Q6mIVCvoILANAXqNlRQmJZA3YIKA9MWqFOosDCBgBAqFApD2qMqYfYpL4zC2y4Wi6fYa5XuhX0rwTBQUWHwHxgI4SBQncCEBmoH1SlMJCAX6vb21lF5QnlLZ99b2nUcfNLjlfKuZVnZIGsGvfoUasrqFZm+eijT1xEMNiIDoeyBoinyyKBMsv4/ov1qhB4qnB+42pRpc+tRnpGB5ubmpgTA3sQt8y+ZMm30RYFBJxIQ93Dd9KowAvjT19f3jkwZKPqQiQIVeg3Nzs5OyqkjZ2kB/FZ+r2jaxLnW1Bv1fVB+pOqZ+rKlUmmHvqAp1AhpnyHMuemllX8p51wYlROmnDN9yPDhgE7gFHiE9KnyXG/8WW8/JOs/lXP6bPrSyJNkX6v9o/Jj6ZxKZ1qye41kvW2BRggYKfIRMCQHP3QHtpvB4IA+ZJA1L+AYG17/vnpbIEXMuAwzTcN6XmjxZldXV7/6LHkakEEWHaNL9I17xHzVlkC69I+ZaMpI85zjQJ9HWz4rTRqQRUfd5xqpDLaw2US82tx0DSliRs3RMKK3POW80ltvtzLWrI8tgHPOTN+ROecOG8k3HCEZGHFhpHRipikSDE55EWxgS7lqGx8q+5JvhLT4nmlEiKZRSR/LkL2+vr7v04zQwBpi2qSKj0P5IPqO603dGyFg1Ek0jep5pM/bbLdgcIotbGLb+CD68FlLNSBtYBlRQ8+iO1DYTuvz9qAm2aUCNrGND+UxfOLbNV+dsqWlpeHLy0tHjWx++8y3IuS7K9SLJxCaPmZjXPb3BgcHs8vLyydJz51mVx02Hb2A8No0A1FRO8dL9S5lKZo2TMO25nc6Lhjg8IVPFYngCVj4wyqvaXLUUPtLROXYkvkbhh3dgeUf+Iptj84LozYAAAAASUVORK5CYII=);
       background-repeat: no-repeat;
       -webkit-background-size: cover;
@@ -79,6 +77,6 @@ export default {
   transform: translate(0, 0);
 }
 .smd-pop-bottom-o {
-  transform: translate(0, 100%) translateZ(0);
+  transform: translate(0, 150%) translateZ(0);
 }
 </style>

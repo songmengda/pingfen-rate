@@ -4,19 +4,9 @@ import Router from 'vue-router'
 
 const Rate = r => require.ensure([], () => r(require('./pages/page-Rate')), 'page-Rate')
 
-const pageYY = r => require.ensure([], () => r(require('./pages/tian-YY')), 'page-YY')
-
 Vue.use(Router)
 
 const routes = [
-  {
-    path: '/page-YY',
-    name: '/page-YY',
-    component: pageYY,
-    meta: {
-      title: '文字动画'
-    }
-  },
   {
     path: '/page-Rate',
     name: 'page-Rate',

@@ -9,7 +9,7 @@
       :class="isChoice(index)"
     >
       <i
-        v-if="disabled&&index==Math.floor(childScore+1)"
+        v-if="disabled&&index==Math.floor(childScore)"
         class="iconfont icon-xingxingshixin icon-star floor"
         :style="'width:'+width"
       ></i>
@@ -31,7 +31,6 @@ export default {
   },
   data () {
     return {
-      width: '', // 最后那个星的百分数
       childScore: this.score // 避免直接修改props的值，将props的评分数值保存在当前组件管理的data中
     }
   },
@@ -42,23 +41,22 @@ export default {
     }
   },
   computed: {
+    width () {// 最后那个星的百分数
+      let width = Number(this.childScore * 100 - Math.floor(this.childScore) * 100) + '%' // 去设置半颗星的宽度
+      return width
+    }
   },
 
   mounted () { },
 
-  created () {
-    this.init() // 去设置半颗星的宽度
-  },
+  created () { },
 
   methods: {
     choice (index) { //点击设置分数
       this.$emit('choice', index + 1)
     },
-    init () {
-      this.width = Number(this.childScore * 100 - Math.floor(this.childScore) * 100) + '%'
-    },
     isChoice (index) {
-      return index < this.childScore ? 'icon-star' : 'icon-star-o'
+      return index + 1 <= this.childScore ? 'icon-star' : 'icon-star-o'
     }
   }
 

@@ -26,8 +26,8 @@ export default {
   data () {
     return {
       showFloating: false,
-      score1: 2.4,
-      score2: 4.3,
+      score1: 4.4,
+      score2: 4.4,
     }
   },
 
@@ -48,6 +48,8 @@ export default {
       return _scoreMsg
     }
   },
+  created () { },
+  mounted () { },
 
   methods: {
     showPopBottom () {
@@ -55,6 +57,7 @@ export default {
     },
     choice (index) {
       this.score2 = index
+      window.console.log('当前分数为:', this.score2)
     },
     submit () {
 
@@ -69,19 +72,6 @@ export default {
 </script>
 <style lang="less"  rel="stylesheet/less" scope type="text/less">
 @r: 100;
-* {
-  padding: 0;
-  margin: 0;
-}
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-  .my-rate {
-    max-width: 750px;
-    margin: 0 auto;
-  }
-}
 .score-msg {
   font-size: 32rem / @r;
   color: #666666;
