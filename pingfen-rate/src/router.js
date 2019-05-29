@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 
-const Rate = r => require.ensure([], () => r(require('./pages/page-Rate')), 'page-Rate')
+const Rate = r => require.ensure([], () => r(require('./pages/views/page-Rate')), 'page-Rate')
 
 Vue.use(Router)
 
