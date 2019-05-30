@@ -3,10 +3,19 @@ import Router from 'vue-router'
 
 
 const Rate = r => require.ensure([], () => r(require('./pages/views/page-Rate')), 'page-Rate')
+const Index = r => require.ensure([], () => r(require('./pages/index')), 'Index')
 
 Vue.use(Router)
 
 const routes = [
+  {
+    path: '/index',
+    name: 'index',
+    component: Index,
+    meta: {
+      title: '常用组件首页'
+    }
+  },
   {
     path: '/page-Rate',
     name: 'page-Rate',
@@ -17,10 +26,10 @@ const routes = [
   },
   {
     path: '*',
-    redirect: '/page-Rate',
-    component: Rate,
+    redirect: '/index',
+    component: Index,
     meta: {
-      title: '星星评分'
+      title: '常用组件首页'
     }
   },
 
