@@ -4,6 +4,7 @@ import Router from 'vue-router'
 
 const Rate = r => require.ensure([], () => r(require('./pages/views/page-Rate')), 'page-Rate')
 const Index = r => require.ensure([], () => r(require('./pages/index')), 'Index')
+const Picker = r => require.ensure([], () => r(require('./pages/views/page-picker')), 'page-picker')
 
 Vue.use(Router)
 
@@ -22,6 +23,14 @@ const routes = [
     component: Rate,
     meta: {
       title: '星星评分'
+    }
+  },
+  {
+    path: '/page-picker',
+    name: 'page-picker',
+    component: Picker,
+    meta: {
+      title: '选择器'
     }
   },
   {

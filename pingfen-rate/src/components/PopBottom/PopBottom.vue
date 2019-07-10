@@ -75,8 +75,14 @@ export default {
 }
 .smd-pop-bottom-t {
   transform: translate(0, 0);
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
 .smd-pop-bottom-o {
   transform: translate(0, 150%) translateZ(0);
+  left: 0;
+  right: 0;
+  opacity: 0;
 }
 </style>

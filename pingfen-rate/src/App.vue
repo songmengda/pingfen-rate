@@ -16,8 +16,9 @@ export default {
 }
 </script>
 
-<style>
-*{
+<style lang="less"  rel="stylesheet/less" type="text/less">
+@import 'assets/_css/reset';
+* {
   padding: 0;
   margin: 0;
 }
@@ -32,12 +33,14 @@ export default {
   height: 100vh;
   background-color: #f5f5f5;
 }
-.page-fade-enter-active,.page-fade-leave-active {
+.page-fade-enter-active,
+.page-fade-leave-active {
   transition: all 0.5s ease;
 }
-.page-fade-enter, .page-fade-leave-to
-{
-  left:0;right: 0;
+.page-fade-enter,
+.page-fade-leave-to {
+  left: 0;
+  right: 0;
   transform: translateX(100%);
   opacity: 0;
 }

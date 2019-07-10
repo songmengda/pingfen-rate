@@ -28,6 +28,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
+  max-width: 750px;
   background-color: #f5f5f5;
 }
 </style>
