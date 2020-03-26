@@ -1,7 +1,7 @@
-import FloatingLayer from "@/components/FloatingLayer"
-import Rate from "@/components/Rate"
-import PopBottom from "@/components/PopBottom"
-import Btn from "@/components/Btn"
+import FloatingLayer from "./FloatingLayer"
+import Rate from "./rate/index"
+import PopBottom from "./PopBottom"
+import Btn from "./Btn"
 export {
   FloatingLayer,
   Rate,

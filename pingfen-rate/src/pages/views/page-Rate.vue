@@ -14,7 +14,8 @@
 
 <script>
 // import { queryCoupon } from '@/api/service.js'
-import { Rate, FloatingLayer, PopBottom, Btn } from '@/components/index.js'
+// ../../ /components/index.js
+import { Rate, FloatingLayer, PopBottom, Btn } from '../../components/index'
 export default {
   components: {
     Rate,

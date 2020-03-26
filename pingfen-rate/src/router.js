@@ -35,10 +35,10 @@ const routes = [
   },
   {
     path: '*',
-    redirect: '/index',
-    component: Index,
+    redirect: '/page-Rate',
+    component: Rate,
     meta: {
-      title: '常用组件首页'
+      title: '星星评分'
     }
   },
 
